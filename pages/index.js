@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Mark Woosey - About</title>
         <link rel="icon" href="/favicon.png" />
         {/* <link rel="stylesheet" href="https://use.typekit.net/cgl1iit.css"></link> */}
         <link rel="stylesheet" href="https://use.typekit.net/goj1swf.css"></link>
