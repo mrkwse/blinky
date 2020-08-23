@@ -1,0 +1,18 @@
+[
+    
+    {
+        "name": "UK Universities & STEM Demographics",
+        "description": "Data and visualisations showing statistics for UK students studying STEM Subjects",
+        "url": "https://observablehq.com/@mrkwse/dei-university"
+    },
+    {
+        "name": "Blog",
+        "description": "My personal blog",
+        "url": "https://mrkw.se"
+    },
+    {
+        "name": "Observable Toys",
+        "description": "Ongoing mess playing with d3.js and others on Observable",
+        "url": "https://observablehq.com/@mrkwse"
+    }
+]

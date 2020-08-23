@@ -1,63 +1,89 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import links from '../data/links.json'
+import socials from '../data/social.json'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faGithub, faInstagram, faMedium, faLinkedin, faStrava } from '@fortawesome/free-brands-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
+        {/* <link rel="stylesheet" href="https://use.typekit.net/cgl1iit.css"></link> */}
+        <link rel="stylesheet" href="https://use.typekit.net/goj1swf.css"></link>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Mark Woosey
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Socially distanced software engineer @ <a href={'http://mclaren.racing'}>McLaren</a>, technophile, gig-goer, bobblehat, and moderate cyclist.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.list}>
+          {
+            links.map(link => (
+              <a href={link.url} className={styles.card} key={link.name}>
+                <div className={styles.cardText}>
+                  <h3>{link.name}</h3>
+                  <p>{link.description}</p>
+                </div>
+                <div className={styles.cardIcon}>
+                  <FontAwesomeIcon icon={faChevronRight}/>
+                </div>
+              </a>
+            ))
+          }
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href={`https://www.twitter.com/${socials.twitter}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <FontAwesomeIcon icon={faTwitter} className={styles.logo} />
+        </a>
+        <a
+          href={`https://www.instagram.com/${socials.instagram}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faInstagram} className={styles.logo} />
+        </a>
+        <a
+          href={`https://www.github.com/${socials.github}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} className={styles.logo} />
+        </a>
+        <a
+          href={`https://www.medium.com/@${socials.medium}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faMedium} className={styles.logo} />
+        </a>
+        <a
+          href={`https://www.linkedin.com/in/${socials.linkedin}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className={styles.logo} />
+        </a>
+        <a
+          href={`https://www.strava.com/athletes/${socials.linkedin}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faStrava} className={styles.logo} />
         </a>
       </footer>
     </div>
