@@ -4,6 +4,14 @@
 @value main-text-secondary: #113333;
 @value accent: #bb5e08;
 
+@media (prefers-color-scheme: dark) {
+  @value base-background: #212b2f;
+  @value alt-background: #121b1f;
+  @value main-text: #eaeae8;
+  @value main-text-secondary: #dddddd;
+  @value accent: #fc8211;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 2rem;
@@ -36,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: main-text;
 }
 
 .footer svg {
