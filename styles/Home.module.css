@@ -4,13 +4,11 @@
 @value main-text-secondary: #113333;
 @value accent: #bb5e08;
 
-@media (prefers-color-scheme: dark) {
-  @value base-background: #212b2f;
-  @value alt-background: #121b1f;
-  @value main-text: #eaeae8;
-  @value main-text-secondary: #dddddd;
-  @value accent: #fc8211;
-}
+@value base-background-dark: #212b2f;
+@value alt-background-dark: #121b1f;
+@value main-text-dark: #eaeae8;
+@value main-text-secondary-dark: #dddddd;
+@value accent-dark: #fc8211;
 
 .container {
   min-height: 100vh;
@@ -99,7 +97,7 @@
   font-family: neue-haas-grotesk-display,sans-serif;
   font-weight: 400;
   font-style: normal;
-  word-spacing: 0.1rem;
+  word-spacing: 0.15rem;
 }
 
 .description > a {
@@ -210,16 +208,65 @@
   height: 1.5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: linear-gradient(10deg, alt-background-dark, base-background-dark);
+  }
+
+  .main {
+    color: main-text-dark;
+  }
+
+  .description > a {
+    border-bottom: 1px solid main-text-dark;
+  }
+  
+  .description > a:hover {
+    color: accent-dark;
+    border-bottom-color: accent-dark;
+  }
+
+  .title:after {
+    background: main-text-dark ;
+  }
+
+  .footer {
+    color: main-text-dark;
+    border-top: 1px solid main-text-dark;
+  }
+
+  .footer a:hover {
+    color: accent-dark;
+  }
+
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: accent-dark;
+    fill: accent-dark;
+  }
+
+  .card h3:after {
+    background: main-text-dark;
+  }
+
+  .card:hover h3:after {
+    background: accent-dark;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 
+
   .description {
     padding: 0.8rem 0 0 0;
     font-size: 1.25rem;
   }
+
 
   .card h3 {
     font-size: 1.25rem;
