@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import about from '../data/about.json'
 import links from '../data/links.json'
 import socials from '../data/social.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Mark Woosey - About</title>
+        <title>Mark Woosey</title>
         <link rel="icon" href="/favicon.png" />
         {/* <link rel="stylesheet" href="https://use.typekit.net/cgl1iit.css"></link> */}
         <link rel="stylesheet" href="https://use.typekit.net/goj1swf.css"></link>
@@ -22,7 +23,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Socially distanced software engineer @ <a href={'http://mclaren.racing'}>McLaren</a>, technophile, gig-goer, bobblehat, and moderate cyclist.
+          Socially distanced software engineer @ <a href={'http://mclaren.racing'}>McLaren</a>, technophile, gig-goer, bobblehat, and fair-weather cyclist.
         </p>
 
         <div className={styles.list}>
