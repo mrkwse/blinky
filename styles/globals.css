@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-display);
+  background-color: var(--alt-background);
 }
 
 a {
@@ -18,6 +18,6 @@ a {
 @media (prefers-color-scheme: dark) {
   html,
   body {
-    background-color: #121b1f;
+    background-color: var(--alt-background-dark);
   }
 }
