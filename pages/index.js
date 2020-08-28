@@ -13,7 +13,6 @@ export default function Home() {
       <Head>
         <title>Mark Woosey</title>
         <link rel="icon" href="/favicon.png" />
-        {/* <link rel="stylesheet" href="https://use.typekit.net/cgl1iit.css"></link> */}
         <link rel="stylesheet" href="https://use.typekit.net/goj1swf.css"></link>
       </Head>
 
