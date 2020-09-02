@@ -132,14 +132,14 @@
   fill: var(--accent);
 }
 
-.card h3 {
+.card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
   font-weight: 500;
   position: relative;
 }
 
-.card h3:after {
+.card h2:after {
   content: '';
   width: 2rem;
   height: 0.15rem;
@@ -149,7 +149,7 @@
   left: 0.05rem;
 }
 
-.card:hover h3:after {
+.card:hover h2:after {
   background: var(--accent);
 }
 
@@ -211,11 +211,11 @@
   }
 
   /* Horizontal dividing dash */
-  .card h3:after {
+  .card h2:after {
     background: var(--main-text-dark);
   }
 
-  .card:hover h3:after {
+  .card:hover h2:after {
     background: var(--accent-dark);
   }
 }
@@ -227,7 +227,7 @@
     margin: 1rem 0 0;
   }
 
-  .card h3 {
+  .card h2 {
     font-size: 1.25rem;
   }
 

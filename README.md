@@ -3,7 +3,7 @@
 
 # Blinky
 
-Blinky is a rudimental webpage intended as a sort of "link-in-bio" style landing page to point visitors to other places on the web. 
+Blinky is a rudimental webpage intended as a sort of "link-in-bio" style landing page to point visitors to other places on the web.
 
 _Currently it's fairly hard-coded to my preferences, but there will be some effort to make things a little more easily modifiable._
 
