@@ -29,7 +29,6 @@ export default function Home() {
 
         <p className={styles.description}>
           Socially distanced software engineer @ <a href={'http://mclaren.racing'}>McLaren</a>, technophile, gig-goer, bobblehat, and fair-weather cyclist.
-          Socially distanced software engineer @ <a href={'http://mclaren.racing'}>McLaren</a>, technophile, gig-goer, bobblehat, and fair-weather cyclist.
         </p>
 
         <div className={styles.list}>
