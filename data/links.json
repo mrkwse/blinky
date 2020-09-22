@@ -5,14 +5,14 @@
         "url": "https://moveformind.blackbaud-sites.com/fundraising/mrkwse"
     },
     {
+        "name": "Blog",
+        "description": "My (new-and-improved) personal blog",
+        "url": "https://blog.mrkw.se"
+    },
+    {
         "name": "UK Universities & STEM Demographics",
         "description": "Data and visualisations showing statistics for UK students studying STEM Subjects",
         "url": "https://observablehq.com/@mrkwse/dei-university"
-    },
-    {
-        "name": "Blog",
-        "description": "My personal blog",
-        "url": "https://archive.mrkw.se"
     },
     {
         "name": "Observable Toys",
